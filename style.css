@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-links a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 1em;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.services-grid, .additional-services-grid, .invitations-list, .documents-list, .providers-list, .service-buttons, .company-list, .time-slots, .service-types, .chat-categories, .chat-messages {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.service-card, .provider-card, .additional-service, .invitation, .document, .company-card, .time-slots button, .service-types button, .chat-category, .message {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar .month {
+    font-size: 1.5em;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5em;
+}
+
+.confirm-btn {
+    background-color: #008cba;
+    color: #fff;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links, .social-media {
+    flex: 1;
+}
+
+.footer-column {
+    margin: 1em;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5em;
+}
+
+.chat-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #f5f5f5;
+    padding: 1em;
+}
+
+.chat-main {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.chat-input button {
+    padding: 0.5em 1em;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

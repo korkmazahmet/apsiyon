@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceCo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ServiceCo</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for services">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#chat">Chat</a>
+                <a href="#filters">Filters</a>
+                <a href="#bookings">Bookings</a>
+                <a href="#invoices">Invoices</a>
+            </div>
+            <div class="profile">
+                <img src="profile-pic.png" alt="Profile Picture">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="discover-services">
+            <h2>Discover Services</h2>
+            <div class="services-grid">
+                <div class="service-card">ServiceConnect Conf 2023</div>
+                <div class="service-card">Bring your pet to work day is here!</div>
+                <div class="service-card new-service">New service options</div>
+            </div>
+        </section>
+        <section id="bookings" class="bookings">
+            <h3>Bookings</h3>
+            <div class="calendar">
+                <div class="month">July 2023</div>
+                <div class="days">
+                    <!-- Calendar days here -->
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h3>Services</h3>
+            <div class="service-buttons">
+                <button>Profile</button>
+                <button>Book Now</button>
+                <button>Cleaning</button>
+                <button>Child Care</button>
+                <button>Pet Care</button>
+                <button>Meal Deal</button>
+                <button>Search</button>
+                <button>Book</button>
+            </div>
+        </section>
+        <section class="service-providers">
+            <h3>Service Providers</h3>
+            <div class="providers-list">
+                <div class="provider-card">Cleaning</div>
+                <div class="provider-card">Child Care</div>
+                <div class="provider-card">Pet Care</div>
+                <div class="provider-card">Meal Deal</div>
+            </div>
+        </section>
+        <section class="additional-services">
+            <h3>Service</h3>
+            <div class="additional-services-grid">
+                <div class="additional-service">Company Events</div>
+                <div class="additional-service">Finance</div>
+                <div class="additional-service">Sales Services</div>
+                <div class="additional-service">Customer Support</div>
+            </div>
+        </section>
+        <section class="service-invitations">
+            <h3>Service Invitations</h3>
+            <div class="invitations-list">
+                <div class="invitation">Secret Santa Event</div>
+                <div class="invitation">Team Building Activities</div>
+                <div class="invitation">Wellness Workshop</div>
+            </div>
+        </section>
+        <section class="service-documents">
+            <h3>Service Documents</h3>
+            <div class="documents-list">
+                <div class="document">Cleaning Guidelines.pdf</div>
+                <div class="document">Service Provider Contact Form.docx</div>
+                <div class="document">Service Packages Brochure.pdf</div>
+                <div class="document">Account Setup Guide.pdf</div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="service-companies">
+            <h2>Cleaning Companies</h2>
+            <div class="company-list">
+                <div class="company-card">
+                    <h3>Sparkle Cleaners</h3>
+                    <p>Contact: 123-456-7890</p>
+                    <p>Email: info@sparkleclean.com</p>
+                    <p>Services Offered: Residential Cleaning, Office Cleaning, Deep Cleaning</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.5/5 based on 120 reviews)</p>
+                    <button>Contact</button>
+                </div>
+                <div class="company-card">
+                    <h3>Fresh Start Cleaners</h3>
+                    <p>Contact: 987-654-3210</p>
+                    <p>Email: contact@freshstart.com</p>
+                    <p>Services Offered: Carpet Cleaning, Window Cleaning, General Cleaning</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.2/5 based on 85 reviews)</p>
+                    <button>Request Service</button>
+                </div>
+                <div class="company-card">
+                    <h3>Eco-Friendly Maids</h3>
+                    <p>Contact: 555-123-4567</p>
+                    <p>Email: eco@maids.com</p>
+                    <p>Services Offered: Green Cleaning, Post-Construction Cleaning, Move-in/Move-out Cleaning</p>
+                    <p>User Reviews: ⭐⭐⭐⭐⭐ (4.8/5 based on 200 reviews)</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+            <h2>Child Care Companies</h2>
+            <div class="company-list">
+                <div class="company-card">
+                    <h3>Happy Tots Daycare</h3>
+                    <p>Contact: 321-654-0987</p>
+                    <p>Email: info@happytots.com</p>
+                    <p>Services Offered: Full-Day Care, Part-Time Care, After-School Programs</p>
+                    <p>User Reviews: ⭐⭐⭐⭐⭐ (4.6/5 based on 90 reviews)</p>
+                    <button>Contact</button>
+                </div>
+                <div class="company-card">
+                    <h3>Little Stars Nursery</h3>
+                    <p>Contact: 444-555-6666</p>
+                    <p>Email: stars@nursery.com</p>
+                    <p>Services Offered: Infant Care, Toddler Programs, Preschool Education</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.3/5 based on 65 reviews)</p>
+                    <button>Request Service</button>
+                </div>
+                <div class="company-card">
+                    <h3>Bright Beginnings</h3>
+                    <p>Contact: 777-888-9999</p>
+                    <p>Email: contact@brightbeginnings.com</p>
+                    <p>Services Offered: Childcare, Education, Special Needs Programs</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.7/5 based on 120 reviews)</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+            <h2>Pet Care Companies</h2>
+            <div class="company-list">
+                <div class="company-card">
+                    <h3>Paw Pals</h3>
+                    <p>Contact: 111-222-3333</p>
+                    <p>Email: info@pawpals.com</p>
+                    <p>Services Offered: Dog Walking, Pet Sitting, Grooming</p>
+                    <p>User Reviews: ⭐⭐⭐⭐⭐ (4.9/5 based on 150 reviews)</p>
+                    <button>Contact</button>
+                </div>
+                <div class="company-card">
+                    <h3>Happy Pets</h3>
+                    <p>Contact: 444-555-6666</p>
+                    <p>Email: happy@pets.com</p>
+                    <p>Services Offered: Pet Boarding, Dog Daycare, Vet Services</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.4/5 based on 95 reviews)</p>
+                    <button>Request Service</button>
+                </div>
+                <div class="company-card">
+                    <h3>Furry Friends</h3>
+                    <p>Contact: 555-666-7777</p>
+                    <p>Email: furry@friends.com</p>
+                    <p>Services Offered: Pet Training, Pet Sitting, Grooming</p>
+                    <p>User Reviews: ⭐⭐⭐⭐⭐ (4.6/5 based on 120 reviews)</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+            <h2>Meal Deal Companies</h2>
+            <div class="company-list">
+                <div class="company-card">
+                    <h3>Fresh Bites</h3>
+                    <p>Contact: 666-777-8888</p>
+                    <p>Email: info@freshbites.com</p>
+                    <p>Services Offered: Meal Delivery, Weekly Plans, Custom Orders</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.7/5 based on 150 reviews)</p>
+                    <button>Contact</button>
+                </div>
+                <div class="company-card">
+                    <h3>Healthy Eats</h3>
+                    <p>Contact: 999-888-7777</p>
+                    <p>Email: eats@healthy.com</p>
+                    <p>Services Offered: Diet Plans, Meal Kits, Nutrition Consultations</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.6/5 based on 105 reviews)</p>
+                    <button>Request Service</button>
+                </div>
+                <div class="company-card">
+                    <h3>Gourmet Meals</h3>
+                    <p>Contact: 333-444-5555</p>
+                    <p>Email: gourmet@meals.com</p>
+                    <p>Services Offered: Fine Dining, Event Catering, Meal Subscriptions</p>
+                    <p>User Reviews: ⭐⭐⭐⭐☆ (4.9/5 based on 180 reviews)</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking-page">
+            <h2>Book your cleaning appointment online</h2>
+            <div class="service-provider-info">
+                <img src="provider-pic.jpg" alt="Service Provider">
+                <p>Service Provider Name, House cleaning services</p>
+                <p>Mon-Fri, 8:30-11:00 AM</p>
+            </div>
+            <div class="calendar">
+                <div class="month">August 2023</div>
+                <div class="days">
+                    <!-- Calendar days here -->
+                </div>
+            </div>
+            <div class="time-slots">
+                <button>8:30 AM</button>
+                <button>8:45 AM</button>
+                <button>9:00 AM</button>
+                <button>9:15 AM</button>
+                <button>9:30 AM</button>
+                <button>9:45 AM</button>
+                <button>10:00 AM</button>
+                <button>10:15 AM</button>
+                <button>10:30 AM</button>
+                <button>11:00 AM</button>
+                <button>11:15 AM</button>
+                <button>11:30 AM</button>
+                <button>11:45 AM</button>
+                <button>1:00 PM</button>
+            </div>
+            <div class="service-types">
+                <button>Online cleaning</button>
+                <button>In-person cleaning</button>
+                <button>Request home</button>
+            </div>
+            <button class="confirm-btn">Confirm cleaning appointment</button>
+        </section>
+
+        <!-- Chat Section -->
+        <section id="chat" class="chat-page">
+            <h2>Find Services</h2>
+            <div class="chat-sidebar">
+                <div class="chat-categories">
+                    <h3>Recent Chats</h3>
+                    <div class="chat-category">Cleaning</div>
+                    <div class="chat-category">Pet Care</div>
+                    <div class="chat-category">Meal Deals</div>
+                    <div class="chat-category">Special Offers</div>
+                </div>
+                <div class="chat-category">Service Provider Chats</div>
+            </div>
+            <div class="chat-main">
+                <div class="chat-messages">
+                    <div class="message">
+                        <p>Serv 2:30 PM - Book your next service now.</p>
+                    </div>
+                    <div class="message">
+                        <p>Clea 11:45 AM - Can't book now. Busy preparing for launch.</p>
+                    </div>
+                    <div class="message">
+                        <p>Joh 11:45 AM - Service needed?</p>
+                    </div>
+                    <div class="message">
+                        <p>Alice 11:46 AM - Feedback on pet care content? Can you review this?</p>
+                    </div>
+                    <div class="message">
+                        <p>Sara 11:46 AM - Interesting. Let's discuss over call now.</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a new message...">
+                    <button>Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <p>Follow us on social</p>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="spotify.png" alt="Spotify"></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <p>About us</p>
+                    <p>Privacy policy</p>
+                    <p>Terms of use</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <p>Our team</p>
+                    <p>Client testimonials</p>
+                    <p>Cleaning tips</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <p>Customer support</p>
+                    <p>FAQs</p>
+                    <p>Mobile App support</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
