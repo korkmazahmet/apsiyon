@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />\
+
+    <!--Font-awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logosquare.jpeg">
+
+
+    <title>Şimdi bul- Apsiyon Yanında</title>
+
+<body style="width:100%;">
+
+    <!--------------------------------------------Header------------------------------------------------->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  ">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="images\LOGO.jpeg" width="120" height="40px">
+          </a>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 link-secondary">Ana sayfa</a></li>
+            <li><a href="#custom-cards" class="nav-link px-2 link-dark">Katagoriler</a></li>
+            <li><a href="#order" class="nav-link px-2 link-dark">Seçimlerim</a></li>
+            <li><a href="#faq" class="nav-link px-2 link-dark">Extra</a></li>
+            <li><a href="#about" class="nav-link px-2 link-dark">Hakkımızda</a></li>
+          </ul>
+    
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Ayarlar</a></li>
+              <li><a class="dropdown-item" href="#">Profil</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Çıkış Yap</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-4 text-end">
+            <a href="Log-in.html"> <button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+            <a href="sign-up.html"> <button type="button" class="btn btn-outline-success me-4">Sign-up</button></a>
+            <a href="checkoutpg.html"><button type="button" class="btn btn-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                  </path>
+                </svg>
+                Cart
+              </button>
+            </a>
+          </div>
+        </header>
+      </div>
+    <div>
+        
+        <nav class="navbar bg-danger text-center" >
+            <div class="container-fluid">
+              <form class="d-flex w-50" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search Your Favorite Food" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>                                                                      
+    
+    <!-----------------------------------Offers and deals----------------------------->
+  <div class="container-lg my-3" id="offerd" data-aos="flip-down">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+           <a href="orders.html"><img src="images/OFFER3.jpeg" class="d-block w-100" alt="Slide 1"></a> 
+            </div>
+            <div class="carousel-item">
+                <a href="orders.html"> <img src="images/OFFER2.jpeg" class="d-block w-100" alt="Slide 2"></a> 
+            </div>
+            <div class="carousel-item">
+                <a href="orders.html">  <img src="images/OFFER1.jpeg" class="d-block w-100" alt="Slide 3"></a> 
+            </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+</div>
+  
+    <!--------------------------------Order Now-------------------------------->
+    <section class="padding-y">
+      <div class="container">
+
+          <header class="section-heading">
+              <h3 class="section-title">Order Now</h3>
+          </header>
+<div class="d-flex">
+          <div class="card" style="width: 18rem;">
+              <img src="images/fc1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Günlük ev yemeği 
+
+                </h5>
+                <p class="card-text"> Gün 50 tl</p>
+                <a href="" class="btn btn-primary">İletişime geç</a>
+              </div>
+            </div>
+             
+          <div class="card" style="width: 18rem;">
+              <img src="images/fc2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Günlük ev yemeği abonelik</h5>
+                <p class="card-text">Aylık 3000 tl </p>
+                <a href="" class="btn btn-primary">İletişime geç</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="images/fc3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ev organizsayon </h5>
+                <p class="card-text">5000 tl den başlayan fiyatlarla</p>
+                <a href="" class="btn btn-primary">İletişime geç</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="images/fc4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Günlük yardım
+                </h5>
+                <p class="card-text">700 tl gün</p>
+                <a href="" class="btn btn-primary">İletişime geç</a>
+              </div>
+            </div>
+          
+            <div class="card" style="width: 18rem;">
+              <img src="images/fc5.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sinema aboneliği</h5>
+                <p class="card-text">aylık 40 tl</p>
+                <a href="" class="btn btn-primary">İletişime geç</a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="d-flex">
+              <div class="card" style="width: 18rem;">
+                  <img src="images/fc6.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Evcil hayvan bakımı günlük</h5>
+                    <p class="card-text">200 tl</p>
+                    <a href="" class="btn btn-primary">İletişime geç</a>
+                  </div>
+                </div>
+                 
+              <div class="card" style="width: 18rem;">
+                  <img src="images/fc7.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Ev temizliği genel temizlik</h5>
+                    <p class="card-text">800 tl </p>
+                    <a href="" class="btn btn-primary">İletişime geç</a>
+                  </div>
+                </div>
+  
+                <div class="card" style="width: 18rem;">
+                  <img src="images/fc8.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Köpek gezdirme</h5>
+                    <p class="card-text">100 tl günlük</p>
+                    <a href="" class="btn btn-primary">İletişime geç</a>
+                  </div>
+                </div>
+  
+                <div class="card" style="width: 18rem;">
+                  <img src="images/fc9.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Ek hizmetler</h5>
+                    <p class="card-text">yönetici iletişimi/p>
+                    <a href="" class="btn btn-primary">İletişime geç</a>
+                  </div>
+                </div>
+              
+                <div class="card" style="width: 18rem;">
+                  <img src="images/fc10.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> Ev temizliği şirket 2</h5>
+                    <p class="card-text">1000 tl </p>
+                    <a href="" class="btn btn-primary">İletişime geç</a>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="d-flex">
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/fc11.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">kreş</h5>
+                        <p class="card-text">9000 tl</p>
+                        <a href="" class="btn btn-primary">İletişime geç</a>
+                      </div>
+                    </div>
+                     
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/fc12.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Çocuk bakıcısı</h5>
+                        <p class="card-text">900 tl </p>
+                        <a href="" class="btn btn-primary">İletişime geç</a>
+                      </div>
+                    </div>
+      
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/fc13.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Eğitim yardımı</h5>
+                        <p class="card-text">900tl</p>
+                        <a href="" class="btn btn-primary">İletişime geç</a>
+                      </div>
+                    </div>
+      
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/fc14.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Yemek Hizmeti şirket 2</h5>
+                        <p class="card-text">aylık 4000 tl </p>
+                        <a href="" class="btn btn-primary">İletişime geç</a>
+                      </div>
+                    </div>
+                  
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/fc15.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Eğitim Hizmeti</h5>
+                        <p class="card-text">800 tl </p>
+                        <a href="" class="btn btn-primary">İletişime geç</a>
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div class="d-flex">
+                      <div class="card" style="width: 18rem;">
+                          <img src="images/fc16.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Ütü şirketi 1</h5>
+                            <p class="card-text">200 tl den başlayan fiyatlarla</p>
+                            <a href="" class="btn btn-primary">İletişime geç</a>
+                          </div>
+                        </div>
+                         
+                      <div class="card" style="width: 18rem;">
+                          <img src="images/fc17.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Ütü şirketi 1</h5>
+                            <p class="card-text">300 tl den başlayan fiyatlarla</p>
+                            <a href="" class="btn btn-primary">İletişime geç</a>
+                          </div>
+                        </div>
+          
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/fc18.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Yemek Hizmeti şirket 3</h5>
+                            <p class="card-text">aylık 5000 tl </p>
+                            <a href="" class="btn btn-primary">İletişime geç</a>
+                          </div>
+                        </div>
+          
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/fc19.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Tamir şirketi </h5>
+                            <p class="card-text">iletişim dahilinde bilgilendirme</p>
+                            <a href="" class="btn btn-primary">İletişime geç</a>
+                          </div>
+                        </div>
+                      
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/fc20.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Ütü şirketi 6</h5>
+                            <p class="card-text">100 tlden başlayan fiyatlarla</p>
+                            <a href="" class="btn btn-primary">İletişime geç</a>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="d-flex">
+                          <div class="card" style="width: 18rem;">
+                              <img src="images/fc21.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">kahve aboneliği</h5>
+                                <p class="card-text"> aylık 500tl den başlayan fiyatlarla</p>
+                                <a href="" class="btn btn-primary">İletişime geç</a>
+                              </div>
+                            </div>
+                             
+                          <div class="card" style="width: 18rem;">
+                              <img src="images/fc22.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Anlaşmalı kurumlar</h5>
+                                <p class="card-text">site ile iletişim </p>
+                                <a href="" class="btn btn-primary">İletişime geç</a>
+                              </div>
+                            </div>
+              
+                            <div class="card" style="width: 18rem;">
+                              <img src="images/fc1.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Yemek şirketi 7</h5>
+                                <p class="card-text">150tl</p>
+                                <a href="" class="btn btn-primary">İletişime geç</a>
+                              </div>
+                            </div>
+              
+                            <div class="card" style="width: 18rem;">
+                              <img src="images/fc2.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Yemek şirketi 8</h5>
+                                <p class="card-text">100 tl </p>
+                                <a href="" class="btn btn-primary">İletişime geç</a>
+                              </div>
+                            </div>
+                          
+                            <div class="card" style="width: 18rem;">
+                              <img src="images/fc3.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Temizlik şirketi 8</h5>
+                                <p class="card-text"></p>
+                                <a href="" class="btn btn-primary">İletişime geç</a>
+                              </div>
+                            </div>
+                          </div> 
+
+                          <div class="d-flex">
+                              <div class="card" style="width: 18rem;">
+                                  <img src="images/fc1.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Yemek aboneliği</h5>
+                                    <p class="card-text">aylık 2000 tl </p>
+                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                  </div>
+                                </div>
+                                 
+                              <div class="card" style="width: 18rem;">
+                                  <img src="images/fc2.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Chicken Biryani</h5>
+                                    <p class="card-text">$9.0</p>
+                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                  </div>
+                                </div>
+                  
+                                <div class="card" style="width: 18rem;">
+                                  <img src="images/fc3.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Temizlik şirketi 8</h5>
+                                    <p class="card-text">1000 tl </p>
+                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                  </div>
+                                </div>
+                  
+                                <div class="card" style="width: 18rem;">
+                                  <img src="images/fc4.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Düzenleme hizmeti</h5>
+                                    <p class="card-text">800 tl </p>
+                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                  </div>
+                                </div>
+                              
+                                <div class="card" style="width: 18rem;">
+                                  <img src="images/fc5.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Sinema Aboneliği</h5>
+                                    <p class="card-text">500 tl </p>
+                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                  </div>
+                                </div>
+                              </div> 
+                  
+                              <div class="d-flex">
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="images/fc6.jpeg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Hayvan bakımı</h5>
+                                        <p class="card-text">aylık otel kiralama 1000 tl </p>
+                                        <a href="" class="btn btn-primary">İletişime geç</a>
+                                      </div>
+                                    </div>
+                                     
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="images/fc7.jpeg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Temizlik</h5>
+                                        <p class="card-text">1000 tl</p>
+                                        <a href="" class="btn btn-primary">İletişime geç</a>
+                                      </div>
+                                    </div>
+                      
+                                    <div class="card" style="width: 18rem;">
+                                      <img src="images/fc8.jpeg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Köpek gezdirme</h5>
+                                        <p class="card-text">aylık 900 tl</p>
+                                        <a href="" class="btn btn-primary">İletişime geç</a>
+                                      </div>
+                                    </div>
+                      
+                                    <div class="card" style="width: 18rem;">
+                                      <img src="images/fc9.jpeg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">ek hizmetler</h5>
+                                        <p class="card-text">talep formu</p>
+                                        <a href="" class="btn btn-primary">İletişime geç</a>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="card" style="width: 18rem;">
+                                      <img src="images/fc10.jpeg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">temizlik şirketi 10</h5>
+                                        <p class="card-text">1500 tl </p>
+                                        <a href="" class="btn btn-primary">İletişime geç</a>
+                                      </div>
+                                    </div>
+                                  </div> 
+                  
+                                  <div class="d-flex">
+                                      <div class="card" style="width: 18rem;">
+                                          <img src="images/fc11.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title">kreş</h5>
+                                            <p class="card-text">5000 tl </p>
+                                            <a href="" class="btn btn-primary">İletişime geç</a>
+                                          </div>
+                                        </div>
+                                         
+                                      <div class="card" style="width: 18rem;">
+                                          <img src="images/fc12.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title">çocuk bakımı</h5>
+                                            <p class="card-text">900 tl günlük</p>
+                                            <a href="" class="btn btn-primary">İletişime geç</a>
+                                          </div>
+                                        </div>
+                          
+                                        <div class="card" style="width: 18rem;">
+                                          <img src="images/fc13.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title">eğitim desteği 3000 tl</h5>
+                                            <p class="card-text">$9.0</p>
+                                            <a href="" class="btn btn-primary">İletişime geç</a>
+                                          </div>
+                                        </div>
+                          
+                                        <div class="card" style="width: 18rem;">
+                                          <img src="images/fc14.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title">yemek şirketi</h5>
+                                            <p class="card-text">900tl</p>
+                                            <a href="" class="btn btn-primary">İletişime geç</a>
+                                          </div>
+                                        </div>
+                                      
+                                        <div class="card" style="width: 18rem;">
+                                          <img src="images/fc15.jpeg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title">özel ders</h5>
+                                            <p class="card-text">900 tl</p>
+                                            <a href="" class="btn btn-primary">İletişime geç</a>
+                                          </div>
+                                        </div>
+                                      </div> 
+                  
+                                      <div class="d-flex">
+                                          <div class="card" style="width: 18rem;">
+                                              <img src="images/fc16.jpeg" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">kuru temizleme</h5>
+                                                <p class="card-text">200 tl</p>
+                                                <a href="" class="btn btn-primary">İletişime geç</a>
+                                              </div>
+                                            </div>
+                                             
+                                          <div class="card" style="width: 18rem;">
+                                              <img src="images/fc17.jpeg" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">kuru temizleme/h5>
+                                                <p class="card-text">500 tl </p>
+                                                <a href="" class="btn btn-primary">İletişime geç</a>
+                                              </div>
+                                            </div>
+                              
+                                            <div class="card" style="width: 18rem;">
+                                              <img src="images/fc18.jpeg" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">yemek aboneliği</h5>
+                                                <p class="card-text">800 tl haftada 3 gün</p>
+                                                <a href="" class="btn btn-primary">İletişime geç</a>
+                                              </div>
+                                            </div>
+                              
+                                            <div class="card" style="width: 18rem;">
+                                              <img src="images/fc19.jpeg" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">tamir hizmeti</h5>
+                                                <p class="card-text">100 tl den başlayan fiyarlarla</p>
+                                                <a href="" class="btn btn-primary">İletişime geç</a>
+                                              </div>
+                                            </div>
+                                          
+                                            <div class="card" style="width: 18rem;">
+                                              <img src="images/fc20.jpeg" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">genel yardım</h5>
+                                                <p class="card-text">300 den başlayan fiyatlarla</p>
+                                                <a href="" class="btn btn-primary">İletişime geç</a>
+                                              </div>
+                                            </div>
+                                          </div> 
+                  
+                                          <div class="d-flex">
+                                              <div class="card" style="width: 18rem;">
+                                                  <img src="images/fc21.jpeg" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">kahve aboneliği</h5>
+                                                    <p class="card-text">800 tl</p>
+                                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                                  </div>
+                                                </div>
+                                                 
+                                              <div class="card" style="width: 18rem;">
+                                                  <img src="images/fc22.jpeg" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">market anlaşmaları</h5>
+                                                    <p class="card-text">yönetici iletişimi</p>
+                                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                                  </div>
+                                                </div>
+                                                <div class="card" style="width: 18rem;">
+                                                  <img src="images/fc8.jpeg" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">evcil hayvan bakımı</h5>
+                                                    <p class="card-text">300 tl günlük</p>
+                                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                                  </div>
+                                                </div>
+                                  
+                                                <div class="card" style="width: 18rem;">
+                                                  <img src="images/fc9.jpeg" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">ek hizmetler</h5>
+                                                    <p class="card-text">yönetici formu</p>
+                                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                                  </div>
+                                                </div>
+                                              
+                                                <div class="card" style="width: 18rem;">
+                                                  <img src="images/fc10.jpeg" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">temizlik şirketi 12</h5>
+                                                    <p class="card-text">900 tl </p>
+                                                    <a href="" class="btn btn-primary">İletişime geç</a>
+                                                  </div>
+                                                </div>
+                                              </div> 
+      </div> <!-- container end.// -->
+  </section>
+
+  <!-------------------------------Footer----------------------------------------->
+
+  <div class="container bg-danger text-white">
+      <footer class="py-5" data-aos="flip-up">
+          <div class="row ">
+              <div class="col-6 col-md-2 mb-3">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Ev</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Özellikler</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Fiyatlandırma</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Hakkında</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Ev</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Özellikler</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Fiyatlandırma</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Hakkında</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Ev</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Özellikler</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Fiyatlandırma</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-white">Hakkında</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                      <h5>Yeni  mailimiz</h5>
+                      <p>Her ay yenilikleri keşfedin</p>
+                      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden">Email address</label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                          <button class="btn btn-primary" type="button">Abone Ol</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-1 border-top">
+              <p>Apsiyon Yanında © 2024 Company, Inc. All rights reserved.</p>
+          </div>
+      </footer>
+  </div>
+
+    <!--Js-CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+
+</html>
